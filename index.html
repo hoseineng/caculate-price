@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه تخفیف و مالیات</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>محاسبه تخفیف و مالیات</h1>
+        <div class="input-group">
+            <label for="price">قیمت کالا (واحد ریال): </label>
+            <input type="number" id="price" placeholder="قیمت کالا" value="100000" />
+        </div>
+        <div class="input-group">
+            <label for="quantity">تعداد کالاها: </label>
+            <input type="number" id="quantity" placeholder="تعداد کالاها" value="1" />
+        </div>
+        <button>محاسبه</button>
+        
+        <h2>نتایج محاسبات:</h2>
+        <table id="resultsTable">
+            <tr>
+                <th>کل تخفیف</th>
+                <td id="totalDiscount">0</td>
+            </tr>
+            <tr>
+                <th>کل مالیات</th>
+                <td id="totalTax">0</td>
+            </tr>
+            <tr>
+                <th>قیمت نهایی پس از تخفیف و مالیات</th>
+                <td id="finalPrice">0</td>
+            </tr>
+            <tr>
+                <th>کل سود حاصل از فروش</th>
+                <td id="totalProfit">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
